@@ -155,9 +155,6 @@ margin: 0 0 0 148px;
  list-style: none;
 }
 
-.intro__item {
-
-}
 
 .intro__item-span {
 font-weight: normal;
@@ -360,6 +357,13 @@ text-decoration: none;
 .footer__coopyright {
 margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+ .header {
+  max-width: 928px;
+ }
+}
+
 
 
 
