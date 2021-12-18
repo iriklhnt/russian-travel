@@ -6,7 +6,7 @@
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
-  background-image: url("./images/__background.jpg");
+  background-image: url("../../../images/__background.jpg");
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center; 
@@ -14,4 +14,44 @@
   text-decoration: none; 
   position: relative; 
   z-index: 0; 
+}
+
+.cover__overlay::after { 
+  content: " "; 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  background-color: #2A2C2F ; 
+  opacity:.3 ; 
+  z-index: -1; 
+} 
+
+.cover__overlay:hover::after { 
+  opacity: .8; 
+ } 
+
+ @media screen and (max-width: 1024px) {
+  .cover__overlay {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__overlay {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .cover__overlay {
+    min-height: 380px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__overlay {
+    min-height: 200px;
+  }
 }
