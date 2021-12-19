@@ -60,7 +60,7 @@
     "text";
     grid-row-gap: 35px;
     margin: 0 0 50px;
-    grid-template-columns: 460px 1fr;
+    grid-template-columns: 100%;
   }
 }
 
